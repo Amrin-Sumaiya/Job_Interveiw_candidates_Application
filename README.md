@@ -29,10 +29,8 @@ backend/
 ├── server.js
 ├── package.json
 ├── .env
-│
 ├── config/
 │   └── db.js
-│
 ├── models/
 │   ├── User.js
 │   ├── Role.js
@@ -41,7 +39,6 @@ backend/
 │   ├── CandidateStatus.js
 │   ├── Appointment.js
 │   └── Upload.js
-│
 ├── controllers/
 │   ├── authController.js
 │   ├── candidateController.js
@@ -57,7 +54,6 @@ backend/
 │   ├── statusRoutes.js
 │   ├── appointmentRoutes.js
 │   └── uploadRoutes.js
-│
 ├── middlewares/
 │   ├── authMiddleware.js
 │   ├── roleMiddleware.js
