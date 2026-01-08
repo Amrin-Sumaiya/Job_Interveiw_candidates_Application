@@ -1,3 +1,4 @@
+// src/data/candidates.js
 export const candidates = [
   {
     id: 1,

@@ -1,4 +1,4 @@
-import React from 'react'
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   return (
@@ -6,7 +6,7 @@ const Navbar = () => {
       <h2 className="text-lg font-semibold">Dashboard</h2>
       <div className="text-sm text-gray-600">Admin</div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

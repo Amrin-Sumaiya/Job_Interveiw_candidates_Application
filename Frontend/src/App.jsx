@@ -1,17 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./component/common/Layout";
 import AdminDashboard from "./pages/AdminDashboard";
-import CandidateTable from "./component/candidates/CandidatesTable";
+import CandidatePages from "./pages/CandidatePages";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<AdminDashboard />} />
-          <Route path="/candidates" element={<CandidateTable />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="candidates" element={<CandidatePages />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 };

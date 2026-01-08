@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
   return (
@@ -14,7 +15,11 @@ const Layout = ({ children }) => {
 
       <div className="flex-1 flex flex-col">
         <Navbar />
-        <main className="p-6 overflow-y-auto">{children}</main>
+
+        {/*  ROUTE CONTENT RENDERS HERE */}
+        <main className="p-6 overflow-y-auto">
+          <Outlet />
+        </main>
       </div>
     </div>
   );

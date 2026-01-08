@@ -11,7 +11,7 @@ const AdminDashboard = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+      <h1 className="text-2xl text-gray-900 font-bold mb-6">Dashboard</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {stats.map((item, i) => (

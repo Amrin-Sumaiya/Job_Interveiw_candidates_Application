@@ -27,7 +27,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
       {/* Logo + Toggle */}
       <div className="flex items-center justify-between p-4">
         {!isCollapsed && (
-          <h1 className="text-xl font-bold text-blue-400">
+          <h1 className="text-xl font-bold text-blue-300">
             Admin Panel
           </h1>
         )}
@@ -58,7 +58,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                 </span>
               )}
             </Link>
-            
+
           );
         })}
       </nav>
