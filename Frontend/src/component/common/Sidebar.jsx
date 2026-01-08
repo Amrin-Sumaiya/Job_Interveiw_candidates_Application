@@ -58,6 +58,7 @@ const Sidebar = ({ isCollapsed, setIsCollapsed }) => {
                 </span>
               )}
             </Link>
+            
           );
         })}
       </nav>
