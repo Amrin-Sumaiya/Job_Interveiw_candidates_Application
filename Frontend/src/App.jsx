@@ -1,13 +1,19 @@
-import React from 'react'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./component/common/Layout";
+import AdminDashboard from "./pages/AdminDashboard";
+import CandidateTable from "./component/candidates/CandidatesTable";
 
 const App = () => {
   return (
-    <div className= " bg-red-300" >
-      hellow rode
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<AdminDashboard />} />
+          <Route path="/candidates" element={<CandidateTable />} />
+        </Routes>
+      </Layout>
+    </BrowserRouter>
+  );
+};
 
-      hellow world 
-    </div>
-  )
-}
-
-export default App
+export default App;
